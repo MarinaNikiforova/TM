@@ -11,8 +11,7 @@ import java.util.Scanner;
 
 
 /**
- *
- * @author Marina
+ *by Marina Nikiforova
  */
 public class TM {
 
@@ -65,7 +64,6 @@ class Log {
     
     /**
      * constructor 
-     * @param logFile 
      */
     public Log(String logFile) {
         records = new ArrayList<>();
@@ -211,7 +209,7 @@ class Record {
     private String size;
 
     static final String EMPTY = "-";
-    // this static array let us check for the correctness of the input size !!!!
+    // this static array lets us check for the correctness of the input size 
     static final String [] sizes = {"XS", "S", "M", "L", "XL"};
 
     /**
@@ -296,8 +294,7 @@ class Record {
     
     
     /**
-     * get run time
-     * @return 
+     * get task duration
      */
     public double getRunTime() {
         if (stop.equals(EMPTY)) {
@@ -311,7 +308,7 @@ class Record {
         int tmp = 0;
         double second, minute, hour;
         
-        // get the right run time        
+        // get the right duration        
         if (sp.getSecond() < st.getSecond()) {
             second = sp.getSecond() + 60 - st.getSecond();
             tmp = 1;
